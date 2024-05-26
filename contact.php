@@ -14,6 +14,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.php">Products</a></li>
                 <li><a href="contact.php">Contact</a></li>
+                <li><a href="cart.php">Cart</a></li>
             </ul>
         </nav>
     </header>
@@ -35,7 +36,6 @@
                 $email = $_POST['email'];
                 $message = $_POST['message'];
 
-                // Process the form data (e.g., save to database, send email, etc.)
                 echo "<p>Thank you, $name. We have received your message.</p>";
             }
             ?>

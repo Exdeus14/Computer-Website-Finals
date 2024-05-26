@@ -1,14 +1,18 @@
+<?php
+include('includes/db.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Store</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Eudz Computer Store</h1>
+        <h1>Your Cart</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,16 +23,15 @@
         </nav>
     </header>
     <main>
-        <section class="home-images">
-            <h2>Latest Computers</h2>
-            <img src="images/asus.png" alt="asus">
-            <img src="images/acer.png" alt="acer">
-            <img src="images/legion.png" alt="legion">
+        <section>
+            <h2>Cart Items</h2>
+            <div id="cart-items"></div>
+            <button id="checkout">Checkout</button>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Computer Store</p>
     </footer>
-    <script src="js/scripts.js"></script>
+    <script src="js/cart_display.js"></script>
 </body>
 </html>
